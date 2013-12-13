@@ -1,0 +1,21 @@
+Authors: Benjamin A. Holland, Xinran Xiao, Benjamin D. Page
+Group Name: Raboso
+Date: May 27th, 2013
+Assignment: Amazing Project Submission
+
+General Layout: Sample results stored in results directory. To run test script, run BATS_TSE.sh in the cs50-Raboso directory. 
+		To manually run the program chamge into the AMStartup directory and run AMStartup with the appropriate parameters
+		from there. *NOTE* printf graphics will be running the entire time if it is manually run.
+
+Defensive programming: Checks for number of arguments, valid number of avatars/difficulty, valid hostname.
+	  	       Returns error message and exits.
+
+Functionality: Fully works. Results saved to log file in results directory. 
+
+Algorithm: We used a modified wall follower. Essentially it uses the left-hand rule to make moves. However, it also fills in dead ends
+	   and leaves breadcrumb trails for other avatars to follow each other. Because every avatar updates everybody's knowledge of where
+	   walls and breadcrumbs are, we bypass the need for shared memory and semaphores.
+
+
+Testing: BATS_TSE.sh first builds and tests the amazing project. It also performs unit tests on major functions.
+
